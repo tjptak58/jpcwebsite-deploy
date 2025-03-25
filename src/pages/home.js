@@ -11,7 +11,7 @@ export default function Home() {
                 </div>
                 <div className="mission-statement-text">
                     <h1>Our Mission:</h1>
-                    <p>At JPC LLC, we are dedicated to delivering exceptional construction projects that are completed on time and within budget. Our commitment to efficiency and reliability ensures the successful execution of every phase, from inception to completion. We prioritize customer satisfaction by maintaining clear communication and providing responsive service throughout the entire process. With a strong foundation built on integrity, precision, and professionalism, we don’t just build structures; we cultivate lasting relationships with our clients.</p>
+                    <p>At Jones Pinnacle LLC, we are dedicated to delivering exceptional construction projects that are completed on time and within budget. Our commitment to efficiency and reliability ensures the successful execution of every phase, from inception to completion. We prioritize customer satisfaction by maintaining clear communication and providing responsive service throughout the entire process. With a strong foundation built on integrity, precision, and professionalism, we don’t just build structures; we cultivate lasting relationships with our clients.</p>
                 </div>
             </div>
             <div className="our-services">
@@ -30,7 +30,7 @@ export default function Home() {
             </div>
             <div className="meet-team">
                 <div className="meet-team-text">
-                    <p>At JPC, our team is the foundation of our success. With years of experience in the construction industry, we bring expertise, dedication, and craftsmanship to every project. From project managers to skilled tradespeople, each member of our team is committed to delivering high-quality results with precision and professionalism.</p>
+                    <p>At Jones Pinnacle, our team is the foundation of our success. With years of experience in the construction industry, we bring expertise, dedication, and craftsmanship to every project. From project managers to skilled tradespeople, each member of our team is committed to delivering high-quality results with precision and professionalism.</p>
                 </div>
                 <div className="meet-team-header">
                 <div className="team-page-wrapper">
@@ -45,8 +45,8 @@ export default function Home() {
             <div className="contact-us">
                 <img src="/images/JPC.png" alt="JPC Logo"></img>
                 <h1>Contact Us:</h1>
-                <p>Email: jonespinnaclellc@gmail.com</p>
-                <p>Phone: +13176070705</p>
+                <p>Email: info@jonespinnaclecompany.com</p>
+                <p>Phone: +16164105724</p>
             </div>
         </>
     )

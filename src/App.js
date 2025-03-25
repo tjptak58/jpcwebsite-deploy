@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Services from './pages/services';
+import Contact from './pages/contact';
 import Team from './pages/team';
 import Signup from './pages/signup';
 import About from './pages/about';
@@ -16,8 +16,8 @@ function App() {
     case "/about":
       Component = About
       break;
-    case "/services":
-      Component = Services
+    case "/contact":
+      Component = Contact
       break;
     case "/team":
       Component = Team

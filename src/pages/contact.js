@@ -1,9 +1,9 @@
 import PageHeader from "../Components/pageHeader"
 
-export default function Services() {
+export default function Contact() {
     return (
         <>
-        <PageHeader title="Services"/>
+        <PageHeader title="Contact"/>
         </>
     )
 }
