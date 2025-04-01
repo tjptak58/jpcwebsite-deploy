@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
+import MyNav from './Components/MyNav';
 import Contact from './pages/contact';
 import Team from './pages/team';
 import Signup from './pages/signup';
@@ -30,9 +30,9 @@ function App() {
   }
   return(
     <div>
-      <Navbar />
+      <MyNav topOfPageBool="true"/>
       <Component />
-      <Navbar />
+      <MyNav topOfPageBool="false"/>
     </div>
   );
 }

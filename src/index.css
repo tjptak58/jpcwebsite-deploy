@@ -15,23 +15,21 @@
 
 body {
   margin:0;
+  font-family: 'Baskerville', sans-serif; /* Replace 'Your Chosen Font' with your desired font */
 }
 
 /* -------Navigation Bar on the top of all the pages ------ */
 
-.nav {
-  background-color: var(--jpcBlue);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
+.bg-body-tertiary {
+  background-color: var(--jpcBlue) !important;
 }
 
-.site-title {
-  font-size: 2rem;
+.nav-toggle {
+    filter: invert(1); /* Makes the icon white */
+}
+
+.nav img {
+  height: 12vw;
 }
 
 .nav ul {
@@ -64,7 +62,7 @@ body {
 
 .page-header {
     padding: 10px 0;
-    height: 30vw;
+    height: 40vw;
     font-size: 8vw;
     text-align: center;
     align-content: center;
@@ -81,27 +79,34 @@ body {
 /* -------- Mission Statement on the Home page ---------*/
 
 .mission-statement {
-  display: flex;
   padding: 20px 20px 20px 20px;
-  height: auto;
   background-color: var(--jpcGray);
   color: var(--jpcBlue);
-  font-size: 45px;
   height: auto;
 }
 
 .mission-statement-header {
-  width: 30%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  width : 100%;
+  padding-bottom: 4vw;
+  padding-left: 3vw;
+  height : auto;
 }
 
-.mission-statement-header img{
-  height: 25vw;
-  padding-top: 30px
+.mission-statement-header h1{
+  font-size: 8vw;
 }
 
 .mission-statement-text {
-  width: 70%;
+  width : 100%;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height : auto;
+}
+
+.mission-statement-text p{
+  font-size: 3.5vw;
 }
 
 
@@ -115,73 +120,65 @@ body {
 }
 
 .services-header {
-  font-size: 30pt;
-  margin-bottom: 40px;
+  font-size: 4vw;
+  padding-top: 2vw;
+  margin-bottom: 4vw;
+  text-decoration: underline;
 }
 
-.our-services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts to available space */
-  gap: 20px;
-  color: black;
-}
-
-.service1, .service2, .service3 {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.service-box {
+  display: flex;
   background-color: var(--jpcBlue);
-  color: var(--jpcGray);
+  color:var(--jpcWhite);
+  border-radius: 20px;
+  padding: 1vw;
+  overflow:hidden;
+  margin-bottom: 3vw;
+}
+
+.service-box-image {
+  width: 40%;
+}
+
+.service-box-description {
+  align-content: center;
+  width: 60%;
+  padding-right: 4vw;
+  padding-left: 1vw;
+  padding-top:1vw;
+  padding-bottom:1vw;
 }
 
 /* ----- Meet our Team ------ */
 
 .meet-team {
   display: flex;
-  padding: 30px 20px 20px 90px;
   height: auto;
   background-color: var(--jpcGold);
   color: var(--jpcBlue);
-  font-size: 60px;
   justify-content: center;
-}
-
-.meet-team-header {
-  width: 30%;
-  padding-top: 150px;
-  padding-right:50px;
-  text-align: center;
-  font-size: 30pt;
 }
 
 .meet-team-text {
   width: 70%;
-  padding-top: 40px;
-  padding-right: 100px;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: 3vw;
 }
 
-.team-page-wrapper {
-  background-color: var(--jpcBlue); /* Green background */
-  padding: 0px 0px; /* More padding for a button-like feel */
-  margin: 20px auto; /* Centering if needed */
-  border: 2px solid #ffffff; /* White border */
-  border-radius: 8px; /* Rounded corners */
-  text-align: center; /* Center the text */
-  cursor: pointer; /* Changes cursor to pointer */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effect */
+.meet-team-header {
+  width: 30%;
+  padding-right:2vw;
+  padding-top:20vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.team-page-wrapper:hover {
-  transform: scale(1.1); /* Slight grow effect */
-}
-
-.team-page-wrapper a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 70px;
+.teamButton {
+  background-color: var(--jpcBlue) !important; /* Custom orange color */
+  font-size: 3vw;
 }
 
 /* ----------Contact us----------- */
@@ -193,26 +190,26 @@ body {
   align-items: center; /* Centers horizontally */
   text-align: center; /* Centers the text */
   gap: 20px; /* Adds some space between the elements */
-  padding: 80px;
+  padding: 1vw;
   background-color: var(--jpcGray);
   color: var(--jpcBlue)
 }
 
 .contact-us img {
   max-width: 100%; /* Ensures image is responsive */
-  height: 500px; /* Maintains aspect ratio */
-  margin-bottom: 20px; /* Adds space below the image */
+  height: 40vw; /* Maintains aspect ratio */
+  margin-bottom: 1vw; /* Adds space below the image */
 }
 
 .contact-us h1 {
-  margin:0;
-  font-size: 30pt;
+  margin:0px;
+  font-size: 6vw;
   text-decoration: underline;
 }
 
 .contact-us p {
   margin: 0; /* Removes default margin */
-  font-size: 20pt
+  font-size:3vw;
 }
 
 
