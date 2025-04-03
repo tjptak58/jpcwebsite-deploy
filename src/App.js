@@ -1,39 +1,29 @@
-//import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import MyNav from './Components/MyNav';
 import Contact from './pages/contact';
 import Team from './pages/team';
+import TeamMember from './pages/teamMember';
 import Signup from './pages/signup';
 import About from './pages/about';
 import Home from './pages/home';
 
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home
-      break;
-    case "/about":
-      Component = About
-      break;
-    case "/contact":
-      Component = Contact
-      break;
-    case "/team":
-      Component = Team
-      break;
-    case "/signup":
-      Component = Signup
-      break;
-    default:
-      break;
-  }
-  return(
-    <div>
-      <MyNav topOfPageBool="true"/>
-      <Component />
-      <MyNav topOfPageBool="false"/>
-    </div>
+  return (
+    <Router>
+      <div>
+        <MyNav topOfPageBool="true" />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/team" element={<Team />} /> {/* Handles /team and subroutes */}
+          <Route path="/team/:memberId" element={<TeamMember />} /> {/* Handles dynamic subpages */}
+        </Routes>
+        <MyNav topOfPageBool="false" />
+      </div>
+    </Router>
   );
 }
 

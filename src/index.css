@@ -79,7 +79,7 @@ body {
 /* -------- Mission Statement on the Home page ---------*/
 
 .mission-statement {
-  padding: 20px 20px 20px 20px;
+  padding: 1vw;
   background-color: var(--jpcGray);
   color: var(--jpcBlue);
   height: auto;
@@ -218,29 +218,29 @@ body {
 /* -------------------ABOUT PAGE -------------------- */
 .about-us {
   display: flex;
-  padding: 20px 20px 20px 20px;
-  height: auto;
-  background-color: var(--jpcGray);
-  color: var(--jpcBlue);
-  font-size: 45px;
-  height: auto;
+  width : 100%;
+  padding-top:4vw;
+  padding-bottom: 4vw;
+  padding-right: 4vw;
+  height : auto;
 }
 
 .about-us-header {
   width: 30%;
-  padding-top: 10px;
+  font-size: 8vw;
   text-align: center;
+
 }
 
 .about-us-header img{
-  height: 25vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 .about-us-text {
-  padding: 10px;
+  font-size: 3.5vw;
   width: 70%;
 }
-
 
 /* ----------Team member boxes----------- */
 
@@ -250,23 +250,46 @@ body {
   background-color: var(--jpcGray);
 }
 
-.our-team h1{
-  font-size: 40pt;
-  text-decoration: underline;
-}
-
-.our-team p{
-  font-size: 40pt;
-}
-
-.our-team img{
+.team-box {
+  display: flex;
+  background-color: var(--jpcBlue);
+  color:var(--jpcWhite);
   border-radius: 20px;
+  padding: 1vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  overflow:hidden;
+  margin-bottom: 3vw;
 }
 
-.team-header {
-  font-size: 30pt;
-  margin-bottom: 40px;
+.team-box-image {
+  width: 40%;
 }
+
+.team-box-description {
+  align-content: center;
+  width: 60%;
+  padding-right: 4vw;
+  padding-left: 1vw;
+  padding-top:1vw;
+  padding-bottom:1vw;
+}
+
+.team-member-header {
+  width: 30%;
+  font-size: 8vw;
+  text-align: center;
+
+}
+
+.team-member-header img{
+  width: 20vw;
+  height: 20vw;
+  font-size: 8vw;
+  text-align: center;
+  border-radius: 40px;
+}
+
 
 /* -------------Sign Up Page ------------*/
 

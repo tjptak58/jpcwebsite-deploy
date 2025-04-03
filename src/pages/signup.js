@@ -4,7 +4,7 @@ import SimpleForm from "../Components/SimpleForm"
 export default function Signup() {
     return (
         <>
-        <PageHeader title="Contractor Sign Up"/>
+        <PageHeader title="Join Our Team"/>
         <SimpleForm />
         </>
     )
