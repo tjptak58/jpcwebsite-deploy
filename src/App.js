@@ -13,15 +13,17 @@ function App() {
     <Router>
       <div>
         <MyNav topOfPageBool="true" />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/team" element={<Team />} /> {/* Handles /team and subroutes */}
-          <Route path="/team/:memberId" element={<TeamMember />} /> {/* Handles dynamic subpages */}
-        </Routes>
-        <MyNav topOfPageBool="false" />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/team" element={<Team />} /> {/* Handles /team and subroutes */}
+            <Route path="/team/:memberId" element={<TeamMember />} /> {/* Handles dynamic subpages */}
+          </Routes>
+        </div>
+        <MyNav topOfPageBool="false" className="bottom-nav"/>
       </div>
     </Router>
   );

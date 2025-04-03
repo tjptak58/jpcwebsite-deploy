@@ -6,8 +6,8 @@ export default function Employee({name, image, id, title}) {
         <div className="team-box">
             <div className="team-box-image">
                 <img src={image} alt="Service" style={{
-                    width: '35vw',
-                    height: '35vw',
+                    width: '30vw',
+                    height: '30vw',
                     objectFit: 'cover',
                     borderRadius: '500px'
                     }}></img>

@@ -3,8 +3,8 @@ export default function TeamBox({image, title, description}) {
         <>
         <div className="team-box">
             <img src={image} alt="Team" style={{
-                width: '300px',
-                height: '300px',
+                width: '1vw',
+                height: '1vw',
                 objectFit: 'cover',
                 borderRadius: '500px'
                 }}></img>

@@ -20,6 +20,18 @@ export default function Home() {
                 <ServiceBox title="Commercial Demolition" description={"Strategically dismantling structures to maximize material reuse, minimize waste, and ensure safe and environmentally responsible demolition."} image="images/Demolition.webp"/>
                 <ServiceBox title="Building Deconstruction" description={"Safely and efficiently dismantling commercial structures while minimizing environmental impact, reducing waste, and ensuring regulatory compliance."} image="images/Deconstruction.jpeg"/>
                 <ServiceBox title="Trenching Operations" description={"Expertly excavating trenches for utilities, foundations, and drainage systems while ensuring safety, efficiency, and compliance with regulations."} image="images/Trenching.webp"/>
+                <div className="codes">
+                    <h2>NAICS Codes</h2>
+                    <ul>
+                        <li>236100 Residential Building Construction</li>
+                        <li>236220 Commercial and Industrial Building</li>
+                        <li>238200 Building Equipment Contractors</li>
+                        <li>238300 Building Finishing Contractors</li>
+                        <li>238910 Site Preparation Contractors</li>
+                        <li>237130 Power & Communication Line Related Structures</li>
+                        <li>237990 Other Heavy and Civil Engineering Construction</li>
+                    </ul>
+                </div>
             </div>
             <div className="meet-team">
                 <div className="meet-team-text">
@@ -33,7 +45,7 @@ export default function Home() {
                 <img src="/images/JPC.png" alt="JPC Logo"></img>
                 <h1>Contact Us:</h1>
                 <p>Email: info@jonespinnaclecompany.com</p>
-                <p>Phone: +16164105724</p>
+                <p>Phone: +1-616-410-5724</p>
             </div>
         </>
     )

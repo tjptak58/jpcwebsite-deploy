@@ -31,11 +31,11 @@ export default function TeamMember() {
     return (
         <>
         <PageHeader title={member.name}/>
-        <div className="about-us">
+        <div className="team-member">
                 <div className="team-member-header">
                     <img src={member.image} alt={memberId}></img>
                 </div>
-                <div className="about-us-text">
+                <div className="team-member-text">
                     <p>{member.description}</p>            
                 </div>
             </div>
