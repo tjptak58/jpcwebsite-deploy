@@ -6,7 +6,7 @@ export default function MyNav({topOfPageBool}) {
     if (topOfPageBool==="true") {
         toggle = <Navbar.Toggle aria-controls="basic-navbar-nav" className="nav-toggle" />
     } else {
-        codes = 
+        codes = <>
         <Navbar.Brand className="ms-auto">
             <img
             src="/images/svosb.jpg"
@@ -16,15 +16,17 @@ export default function MyNav({topOfPageBool}) {
             alt="JPC Logo"
             />
         </Navbar.Brand>
+        </>
+        
     }
     return (
-        <Navbar expand="lg" className="bg-body-tertiary text-white">
+        <Navbar expand="lg" className="bg-body-tertiary text-white px-2 py-2">
             <Navbar.Brand href="/" className="ms-3">
                 <img
                 src="/images/JPC.png"
-                width="80"
-                height="80"
-                className="d-inline-block align-top"
+                width="50"
+                height="50"
+                className="d-inline-block align-top img-fluid"
                 alt="JPC Logo"
                 />
             </Navbar.Brand>

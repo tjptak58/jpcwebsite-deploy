@@ -1,0 +1,1525 @@
+
+@media (max-width: 1250px) {
+  .nav img {
+    height: 12vw;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size : 18pt
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: var(--jpcLightBlue) ;
+  }
+  
+  /* ----------Title of the page---------- */
+  
+  .page-header {
+      padding: 10px 0;
+      height: 25vw;
+      font-size: 8vw;
+      text-align: center;
+      align-content: center;
+      background-image: url("../public/images/Construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .page-header h1 {
+    color: var(--jpcBlue);
+    font-size: 120%;
+  }
+  
+  /* -------- Mission Statement on the Home page ---------*/
+  
+  .mission-statement {
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue);
+    height: auto;
+  }
+  
+  .mission-statement-header {
+    display: flex;
+    align-items: center;
+    width : 100%;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-header h1{
+    font-size: 6vw;
+  }
+  
+  .mission-statement-text {
+    width : 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-text p{
+    font-size: 2.5vw;
+  }
+  
+  
+  /* -------- Our Services on the Home page ---------*/
+  
+  .our-services {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: var(--jpcWhite);
+  }
+  
+  .services-header {
+    font-size: 6vw;
+    padding-top: 2vw;
+    margin-bottom: 4vw;
+    text-decoration: underline;
+  }
+  
+  .service-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .service-box-image {
+    width: 40%;
+  }
+  
+  .service-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+
+  .codes {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left:3vw;
+    padding-right:1vw;
+    
+  }
+  .codes h2{
+    font-size:4vw;
+    text-decoration:underline;
+    padding-bottom:1vw;
+  }
+  .codes ul {
+    list-style-type: none;
+  }
+
+  .codes li{
+    font-size:2vw;
+  }
+  
+  /* ----- Meet our Team ------ */
+  
+  .meet-team {
+    display: flex;
+    height: auto;
+    background-color: var(--jpcGold);
+    color: var(--jpcBlue);
+    justify-content: center;
+  }
+  
+  .meet-team-text {
+    width: 70%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 2.5vw;
+  }
+  
+  .meet-team-header {
+    width: 30%;
+    padding-right:2vw;
+    padding-top:12vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamButton {
+    background-color: var(--jpcBlue) !important; /* Custom orange color */
+    font-size: 3vw;
+  }
+  
+  /* ----------Contact us----------- */
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Centers the text */
+    gap: 20px; /* Adds some space between the elements */
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue)
+  }
+  
+  .contact-us img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: 30vw; /* Maintains aspect ratio */
+    margin-bottom: 1vw; /* Adds space below the image */
+  }
+  
+  .contact-us h1 {
+    margin:0px;
+    font-size: 4vw;
+    text-decoration: underline;
+  }
+  
+  .contact-us p {
+    margin: 0; /* Removes default margin */
+    font-size:1.8vw;
+  }
+  
+  
+  
+  
+  /* -------------------ABOUT PAGE -------------------- */
+  .about-us {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+  
+  .about-us-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  
+  }
+  
+  .about-us-header img{
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .about-us-text {
+    font-size: 2vw;
+    width: 70%;
+  }
+  
+  /* ----------Team member boxes----------- */
+  
+  .our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--jpcGray);
+  }
+  
+  .team-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .team-box-image {
+    width: 40%;
+  }
+  
+  .team-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+  
+  .team-member {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+
+  .team-member-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  
+  .team-member-text {
+    font-size: 2.5vw;
+    width: 70%;
+  }
+  
+  
+  /* -------------Sign Up Page ------------*/
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 4500px;
+  }
+  
+  .form {
+    flex-grow: 1;  /* Takes up full height of parent */
+    
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav img {
+    height: 12vw;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size : 18pt
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: var(--jpcLightBlue) ;
+  }
+  
+  /* ----------Title of the page---------- */
+  
+  .page-header {
+      padding: 10px 0;
+      height: 30vw;
+      font-size: 8vw;
+      text-align: center;
+      align-content: center;
+      background-image: url("../public/images/Construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .page-header h1 {
+    color: var(--jpcBlue);
+    font-size: 120%;
+  }
+  
+  /* -------- Mission Statement on the Home page ---------*/
+  
+  .mission-statement {
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue);
+    height: auto;
+  }
+  
+  .mission-statement-header {
+    display: flex;
+    align-items: center;
+    width : 100%;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-header h1{
+    font-size: 7vw;
+  }
+  
+  .mission-statement-text {
+    width : 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-text p{
+    font-size: 3vw;
+  }
+  
+  
+  /* -------- Our Services on the Home page ---------*/
+  
+  .our-services {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: var(--jpcWhite);
+  }
+  
+  .services-header {
+    font-size: 7vw;
+    padding-top: 2vw;
+    margin-bottom: 4vw;
+    text-decoration: underline;
+  }
+  
+  .service-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .service-box-image {
+    width: 40%;
+  }
+  
+  .service-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+
+  .codes {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left:3vw;
+    padding-right:1vw;
+    
+  }
+  .codes h2{
+    font-size:5vw;
+    text-decoration:underline;
+    padding-bottom:1vw;
+  }
+  .codes ul {
+    list-style-type: none;
+  }
+
+  .codes li{
+    font-size:2.5vw;
+  }
+  
+  /* ----- Meet our Team ------ */
+  
+  .meet-team {
+    display: flex;
+    height: auto;
+    background-color: var(--jpcGold);
+    color: var(--jpcBlue);
+    justify-content: center;
+  }
+  
+  .meet-team-text {
+    width: 70%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 2.5vw;
+  }
+  
+  .meet-team-header {
+    width: 30%;
+    padding-right:2vw;
+    padding-top:12vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamButton {
+    background-color: var(--jpcBlue) !important; /* Custom orange color */
+    font-size: 3vw;
+  }
+  
+  /* ----------Contact us----------- */
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Centers the text */
+    gap: 20px; /* Adds some space between the elements */
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue)
+  }
+  
+  .contact-us img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: 30vw; /* Maintains aspect ratio */
+    margin-bottom: 1vw; /* Adds space below the image */
+  }
+  
+  .contact-us h1 {
+    margin:0px;
+    font-size: 5vw;
+    text-decoration: underline;
+  }
+  
+  .contact-us p {
+    margin: 0; /* Removes default margin */
+    font-size:2vw;
+  }
+  
+  
+  
+  
+  /* -------------------ABOUT PAGE -------------------- */
+  .about-us {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+  
+  .about-us-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  
+  }
+  
+  .about-us-header img{
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .about-us-text {
+    font-size: 2.5vw;
+    width: 70%;
+  }
+  
+  /* ----------Team member boxes----------- */
+  
+  .our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--jpcGray);
+  }
+  
+  .team-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .team-box-image {
+    width: 40%;
+  }
+  
+  .team-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+  
+  .team-member {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+
+  .team-member-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  
+  .team-member-text {
+    font-size: 2.9vw;
+    width: 70%;
+  }
+  
+  
+  /* -------------Sign Up Page ------------*/
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 4500px;
+  }
+  
+  .form {
+    flex-grow: 1;  /* Takes up full height of parent */
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .nav img {
+    height: 12vw;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size : 18pt
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: var(--jpcLightBlue) ;
+  }
+  
+  /* ----------Title of the page---------- */
+  
+  .page-header {
+      padding: 10px 0;
+      height: 30vw;
+      font-size: 8vw;
+      text-align: center;
+      align-content: center;
+      background-image: url("../public/images/Construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .page-header h1 {
+    color: var(--jpcBlue);
+    font-size: 120%;
+  }
+  
+  /* -------- Mission Statement on the Home page ---------*/
+  
+  .mission-statement {
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue);
+    height: auto;
+  }
+  
+  .mission-statement-header {
+    display: flex;
+    align-items: center;
+    width : 100%;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-header h1{
+    font-size: 7vw;
+  }
+  
+  .mission-statement-text {
+    width : 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-text p{
+    font-size: 3.5vw;
+  }
+  
+  
+  /* -------- Our Services on the Home page ---------*/
+  
+  .our-services {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: var(--jpcWhite);
+  }
+  
+  .services-header {
+    font-size: 7vw;
+    padding-top: 2vw;
+    margin-bottom: 4vw;
+    text-decoration: underline;
+  }
+  
+  .service-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .service-box-image {
+    width: 40%;
+  }
+  
+  .service-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+
+  .codes {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left:3vw;
+    padding-right:1vw;
+    
+  }
+  .codes h2{
+    font-size:6vw;
+    text-decoration:underline;
+    padding-bottom:1vw;
+  }
+  .codes ul {
+    list-style-type: none;
+  }
+
+  .codes li{
+    font-size:3vw;
+  }
+  
+  /* ----- Meet our Team ------ */
+  
+  .meet-team {
+    display: flex;
+    height: auto;
+    background-color: var(--jpcGold);
+    color: var(--jpcBlue);
+    justify-content: center;
+  }
+  
+  .meet-team-text {
+    width: 70%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+  }
+  
+  .meet-team-header {
+    width: 30%;
+    padding-right:2vw;
+    padding-top:20vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamButton {
+    background-color: var(--jpcBlue) !important; /* Custom orange color */
+    font-size: 3vw;
+  }
+  
+  /* ----------Contact us----------- */
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Centers the text */
+    gap: 20px; /* Adds some space between the elements */
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue)
+  }
+  
+  .contact-us img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: 40vw; /* Maintains aspect ratio */
+    margin-bottom: 1vw; /* Adds space below the image */
+  }
+  
+  .contact-us h1 {
+    margin:0px;
+    font-size: 6vw;
+    text-decoration: underline;
+  }
+  
+  .contact-us p {
+    margin: 0; /* Removes default margin */
+    font-size:3vw;
+  }
+  
+  
+  
+  
+  /* -------------------ABOUT PAGE -------------------- */
+  .about-us {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+  
+  .about-us-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  
+  }
+  
+  .about-us-header img{
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .about-us-text {
+    font-size: 3vw;
+    width: 70%;
+  }
+  
+  /* ----------Team member boxes----------- */
+  
+  .our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--jpcGray);
+  }
+  
+  .team-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .team-box-image {
+    width: 40%;
+  }
+  
+  .team-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+  
+  .team-member {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+
+  .team-member-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  
+  .team-member-text {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  
+  
+  /* -------------Sign Up Page ------------*/
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 4500px;
+  }
+  
+  .form {
+    flex-grow: 1;  /* Takes up full height of parent */
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .nav img {
+    height: 12vw;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size : 18pt
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: var(--jpcLightBlue) ;
+  }
+  
+  /* ----------Title of the page---------- */
+  
+  .page-header {
+      padding: 10px 0;
+      height: 35vw;
+      font-size: 8vw;
+      text-align: center;
+      align-content: center;
+      background-image: url("../public/images/Construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .page-header h1 {
+    color: var(--jpcBlue);
+    font-size: 120%;
+  }
+  
+  /* -------- Mission Statement on the Home page ---------*/
+  
+  .mission-statement {
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue);
+    height: auto;
+  }
+  
+  .mission-statement-header {
+    display: flex;
+    align-items: center;
+    width : 100%;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-header h1{
+    font-size: 8vw;
+  }
+  
+  .mission-statement-text {
+    width : 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-text p{
+    font-size: 3.5vw;
+  }
+  
+  
+  /* -------- Our Services on the Home page ---------*/
+  
+  .our-services {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: var(--jpcWhite);
+  }
+  
+  .services-header {
+    font-size: 8vw;
+    padding-top: 2vw;
+    margin-bottom: 4vw;
+    text-decoration: underline;
+  }
+  
+  .service-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .service-box-image {
+    width: 40%;
+  }
+  
+  .service-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+
+  .codes {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left:3vw;
+    padding-right:1vw;
+    
+  }
+  .codes h2{
+    font-size:6vw;
+    text-decoration:underline;
+    padding-bottom:1vw;
+  }
+  .codes ul {
+    list-style-type: none;
+  }
+
+  .codes li{
+    font-size:3vw;
+  }
+  
+  /* ----- Meet our Team ------ */
+  
+  .meet-team {
+    display: flex;
+    height: auto;
+    background-color: var(--jpcGold);
+    color: var(--jpcBlue);
+    justify-content: center;
+  }
+  
+  .meet-team-text {
+    width: 70%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 3vw;
+  }
+  
+  .meet-team-header {
+    width: 30%;
+    padding-right:2vw;
+    padding-top:20vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamButton {
+    background-color: var(--jpcBlue) !important; /* Custom orange color */
+    font-size: 3vw;
+  }
+  
+  /* ----------Contact us----------- */
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Centers the text */
+    gap: 20px; /* Adds some space between the elements */
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue)
+  }
+  
+  .contact-us img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: 40vw; /* Maintains aspect ratio */
+    margin-bottom: 1vw; /* Adds space below the image */
+  }
+  
+  .contact-us h1 {
+    margin:0px;
+    font-size: 6vw;
+    text-decoration: underline;
+  }
+  
+  .contact-us p {
+    margin: 0; /* Removes default margin */
+    font-size:3vw;
+  }
+  
+  
+  
+  
+  /* -------------------ABOUT PAGE -------------------- */
+  .about-us {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+  
+  .about-us-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  
+  }
+  
+  .about-us-header img{
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .about-us-text {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  
+  /* ----------Team member boxes----------- */
+  
+  .our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--jpcGray);
+  }
+  
+  .team-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .team-box-image {
+    width: 40%;
+  }
+  
+  .team-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+  
+  .team-member {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+
+  .team-member-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  
+  .team-member-text {
+    font-size: 3.5vw;
+    width: 70%;
+  }
+  
+  .team-member-header img{
+    width: 20vw;
+    height: 20vw;
+    font-size: 8vw;
+    text-align: center;
+    border-radius: 40px;
+  }
+  
+  
+  /* -------------Sign Up Page ------------*/
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 4500px;
+  }
+  
+  .form {
+    flex-grow: 1;  /* Takes up full height of parent */
+    
+  }
+}
+
+@media (min-width: 2000px) {
+  .nav img {
+    height: 12vw;
+  }
+  
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size : 18pt
+  }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+  }
+  
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: var(--jpcLightBlue) ;
+  }
+  
+  /* ----------Title of the page---------- */
+  
+  .page-header {
+      padding: 10px 0;
+      height: 15vw;
+      font-size: 8vw;
+      text-align: center;
+      align-content: center;
+      background-image: url("../public/images/Construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .page-header h1 {
+    color: var(--jpcBlue);
+    font-size: 120%;
+  }
+  
+  /* -------- Mission Statement on the Home page ---------*/
+  
+  .mission-statement {
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue);
+    height: auto;
+  }
+  
+  .mission-statement-header {
+    display: flex;
+    align-items: center;
+    width : 100%;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-header h1{
+    font-size: 4vw;
+  }
+  
+  .mission-statement-text {
+    width : 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height : auto;
+  }
+  
+  .mission-statement-text p{
+    font-size: 2vw;
+  }
+  
+  
+  /* -------- Our Services on the Home page ---------*/
+  
+  .our-services {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    background-color: var(--jpcWhite);
+  }
+  
+  .services-header {
+    font-size: 4vw;
+    padding-top: 2vw;
+    margin-bottom: 4vw;
+    text-decoration: underline;
+  }
+  
+  .service-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .service-box-image {
+    width: 40%;
+  }
+  
+  .service-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+
+  .codes {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left:3vw;
+    padding-right:1vw;
+    
+  }
+  .codes h2{
+    font-size:3vw;
+    text-decoration:underline;
+    padding-bottom:1vw;
+  }
+  .codes ul {
+    list-style-type: none;
+  }
+
+  .codes li{
+    font-size:1.7vw;
+  }
+  
+  /* ----- Meet our Team ------ */
+  
+  .meet-team {
+    display: flex;
+    height: auto;
+    background-color: var(--jpcGold);
+    color: var(--jpcBlue);
+    justify-content: center;
+  }
+  
+  .meet-team-text {
+    width: 70%;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-size: 1.7vw;
+  }
+  
+  .meet-team-header {
+    width: 30%;
+    padding-right:2vw;
+    padding-top:7vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .teamButton {
+    background-color: var(--jpcBlue) !important; /* Custom orange color */
+    font-size: 3vw;
+  }
+  
+  /* ----------Contact us----------- */
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Centers the text */
+    gap: 20px; /* Adds some space between the elements */
+    padding: 1vw;
+    background-color: var(--jpcGray);
+    color: var(--jpcBlue)
+  }
+  
+  .contact-us img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: 20vw; /* Maintains aspect ratio */
+    margin-bottom: 1vw; /* Adds space below the image */
+  }
+  
+  .contact-us h1 {
+    margin:0px;
+    font-size: 3vw;
+    text-decoration: underline;
+  }
+  
+  .contact-us p {
+    margin: 0; /* Removes default margin */
+    font-size:1.6vw;
+  }
+  
+  
+  
+  
+  /* -------------------ABOUT PAGE -------------------- */
+  .about-us {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+  
+  .about-us-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  
+  }
+  
+  .about-us-header img{
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .about-us-text {
+    font-size: 1.7vw;
+    width: 70%;
+  }
+  
+  /* ----------Team member boxes----------- */
+  
+  .our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--jpcGray);
+  }
+  
+  .team-box {
+    display: flex;
+    background-color: var(--jpcBlue);
+    color:var(--jpcWhite);
+    border-radius: 20px;
+    padding: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    overflow:hidden;
+    margin-bottom: 3vw;
+  }
+  
+  .team-box-image {
+    width: 40%;
+  }
+  
+  .team-box-description {
+    align-content: center;
+    width: 60%;
+    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-top:1vw;
+    padding-bottom:1vw;
+  }
+  
+  .team-member {
+    display: flex;
+    width : 100%;
+    padding-top:4vw;
+    padding-bottom: 4vw;
+    padding-right: 4vw;
+    height : auto;
+  }
+
+  .team-member-header {
+    width: 30%;
+    font-size: 8vw;
+    text-align: center;
+  }
+  
+  .team-member-text {
+    font-size: 2.5vw;
+    width: 70%;
+  }
+  
+  
+  /* -------------Sign Up Page ------------*/
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 4500px;
+  }
+  
+  .form {
+    flex-grow: 1;  /* Takes up full height of parent */
+    
+  }
+}
+
+
