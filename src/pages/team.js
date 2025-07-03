@@ -1,6 +1,7 @@
 import Employee from "../Components/Employee";
 import { useEffect, useState } from "react";
 import PageHeader from "../Components/pageHeader"
+import {Container} from 'react-bootstrap'
 
 
 import React from "react";
@@ -29,18 +30,16 @@ export default function Team() {
     return (
         <>
             <PageHeader title="Our Team"/>
-            <div className="our-team">
-                <div className="our-team-container">
-                    {members.map(member => (
-                        <Employee
-                            name={member.name}
-                            image={member.image}
-                            id={member.id}
-                            title={member.title}
-                        />
-                    ))}
-                </div>
-            </div>
+            <Container>
+            {members.map(member => (
+                    <Employee
+                        name={member.name}
+                        image={member.image}
+                        id={member.id}
+                        title={member.title}
+                    />
+            ))}
+            </Container>
         </>
     )
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import PageHeader from "../Components/pageHeader"
+import {Container, Row, Col, Image} from 'react-bootstrap'
 
 export default function TeamMember() {
     const {memberId} = useParams();
@@ -31,14 +32,17 @@ export default function TeamMember() {
     return (
         <>
         <PageHeader title={member.name}/>
-        <div className="team-member">
-                <div className="team-member-header">
-                    <img src={member.image} alt={memberId}></img>
-                </div>
-                <div className="team-member-text">
-                    <p>{member.description}</p>            
-                </div>
-            </div>
+        <Container>
+            <Row className="pt-4 pb-4">
+                <Col xs={4}>
+                    <Image src={member.image} fluid rounded/>
+                </Col>
+                <Col xs={8}>
+                    <p>{member.description}</p> 
+                </Col>
+            </Row>
+        </Container>
+        
         </>
     )
 }
