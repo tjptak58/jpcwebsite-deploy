@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import PageHeader from "../Components/pageHeader"
-import {Container, Form, Button} from "react-bootstrap"
+import {Container, Form} from "react-bootstrap"
 
 export default function Signup() {
     const form = useRef();
@@ -40,7 +40,7 @@ export default function Signup() {
     return (
         <>
         <PageHeader title="Contractor Sign-Up"/>
-        <Container>
+        <Container id="contractor-form">
             <Form ref={form} onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="businessName">
                     <Form.Label>Business Name</Form.Label>
