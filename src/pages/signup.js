@@ -1,35 +1,57 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import PageHeader from "../Components/pageHeader"
 import {Container, Form, Button} from "react-bootstrap"
 
 export default function Signup() {
+    const form = useRef();
 
     const handleSubmit = (e) => {
     e.preventDefault();
 
-    const data = new FormData(e.target);
-    const values = Object.fromEntries(data.entries());
+    const data = new FormData(form.current);
+    const selectedTrades = data.getAll("trades").join(", ");
+    // inject joined trades into hidden field before send
+    form.current.querySelector("input[name='trades']").value = selectedTrades;
 
-    console.log("All fields:", values);
-    console.log("Selected trades:", data.getAll("trades"));
+    emailjs
+    .sendForm(
+        "service_ic20taq",   // from EmailJS dashboard
+        "template_9ckgxpj",  // from EmailJS dashboard
+        form.current,
+        {
+        publicKey: "OzTzzCUZdhg1fKpWV", // from EmailJS account
+        }
+    )
+    .then(
+        () => {
+        console.log("SUCCESS!");
+        alert("Form submitted successfully!");
+        },
+        (error) => {
+        console.log("FAILED...", error.text);
+        alert("Something went wrong, try again.");
+        }
+    );
 
-    window.location.href = "/";
+    //window.location.href = "/";
     };
 
     return (
         <>
         <PageHeader title="Contractor Sign-Up"/>
         <Container>
-            <Form onSubmit={handleSubmit}>
+            <Form ref={form} onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="businessName">
                     <Form.Label>Business Name</Form.Label>
-                    <Form.Control type="text" name = "businessName" placeholder="Enter name"/>
+                    <Form.Control type="text" name = "businessName" placeholder="Enter name" required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="businessOwner">
                     <Form.Label>Business Owner</Form.Label>
                     <Form.Control type="text" name="businessOwner" placeholder="Enter Owner"/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="businessAddress">
-                    <Form.Label>Business Owner</Form.Label>
+                    <Form.Label>Business Address</Form.Label>
                     <Form.Control type="text" name="businessAddress" placeholder="Enter Address"/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="apt">
@@ -66,242 +88,243 @@ export default function Signup() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="title">
                     <Form.Label>Job Title</Form.Label>
-                    <Form.Control type="text" name="title" placeholder="Enter Title"/>
+                    <Form.Control type="text" name="title" placeholder="Enter Title" required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="contact-email">
                     <Form.Label>Primary Contact Email</Form.Label>
-                    <Form.Control type="text" name="contact-email" placeholder="Enter Primary Contact Email"/>
+                    <Form.Control type="text" name="contact-email" placeholder="Enter Primary Contact Email" required/>
                 </Form.Group>
                 <Form.Label>Select Trades</Form.Label>
                 <Form.Group className="mb-3" controlId="trades">
                     <Form.Check // prettier-ignore
                     type="checkbox"
-                    id="appliance"
-                    name="appliance"
+                    value="appliance"
+                    name="trades"
                     label="Appliance Install / Repair"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="cabinets"
-                    name="cabinets"
+                    value="cabinets"
+                    name="trades"
                     label="Cabinets"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="carpenter"
-                    name="carpenter"
+                    value="carpenter"
+                    name="trades"
                     label="Carpenter"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="cleaning"
-                    name="cleaning"
+                    value="cleaning"
+                    name="trades"
                     label="Cleaning - Interior"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="chimney"
-                    name="chimney"
+                    value="chimney"
+                    name="trades"
                     label="Chimney Maintenance / Repair"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="concrete"
-                    name="concrete"
+                    value="concrete"
+                    name="trades"
                     label="Concrete"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="countertops"
-                    name="countertops"
+                    value="countertops"
+                    name="trades"
                     label="Countertops"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="doors"
-                    name="doors"
+                    value="doors"
+                    name="trades"
                     label="Doors"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="drywall"
-                    name="drywall"
+                    value="drywall"
+                    name="trades"
                     label="Dry Wall Install / Repair"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="electrician"
-                    name="electrician"
+                    value="electrician"
+                    name="trades"
                     label="Electrician"
                     />
                     <Form.Check
                     type="checkbox"
-                    id="engineering"
-                    name="engineering"
+                    value="engineering"
+                    name="trades"
                     label="Engineering"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="environmental"
-                    name="environmental"
+                    value="environmental"
+                    name="trades"
                     label="Environmental / Asbestos / Abatement"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="estimator"
-                    name="estimator"
+                    value="estimator"
+                    name="trades"
                     label="Estimator"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="flooring"
-                    name="flooring"
+                    value="flooring"
+                    name="trades"
                     label="Flooring"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="foundation"
-                    name="foundation"
+                    value="foundation"
+                    name="trades"
                     label="Foundation Repair"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="framing"
-                    name="framing"
+                    value="framing"
+                    name="trades"
                     label="Framing"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="garage-doors"
-                    name="garage-doors"
+                    value="garage-doors"
+                    name="trades"
                     label="Garage Doors"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="general-contractor"
-                    name="general-contractor"
+                    value="general-contractor"
+                    name="trades"
                     label="General Contractor"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="general-labor"
-                    name="general-labor"
+                    value="general-labor"
+                    name="trades"
                     label="General Labor"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="gutters"
-                    name="gutters"
+                    value="gutters"
+                    name="trades"
                     label="Gutter Installation / Repair"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="hvac"
-                    name="hvac"
+                    value="hvac"
+                    name="trades"
                     label="HVAC"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="handyman"
-                    name="handyman"
+                    value="handyman"
+                    name="trades"
                     label="Handyman"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="land-survey"
-                    name="land-survey"
+                    value="land-survey"
+                    name="trades"
                     label="Land Survey"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="landscaping"
-                    name="landscaping"
+                    value="landscaping"
+                    name="trades"
                     label="Landscaping"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="maintenance"
-                    name="maintenance"
+                    value="maintenance"
+                    name="trades"
                     label="Maintenance"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="painter"
-                    name="painter"
+                    value="painter"
+                    name="trades"
                     label="Painter"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="pest-control"
-                    name="pest-control"
+                    value="pest-control"
+                    name="trades"
                     label="Pest Control"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="plumber"
-                    name="plumber"
+                    value="plumber"
+                    name="trades"
                     label="Plumber"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="pool"
-                    name="pool"
+                    value="pool"
+                    name="trades"
                     label="Pool Maintenance"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="pressure-washing"
-                    name="pressure-washing"
+                    value="pressure-washing"
+                    name="trades"
                     label="Pressure Washing"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="remediation"
-                    name="remediation"
+                    value="remediation"
+                    name="trades"
                     label="Remediation"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="roofer"
-                    name="roofer"
+                    value="roofer"
+                    name="trades"
                     label="Roofer"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="septic"
-                    name="septic"
+                    value="septic"
+                    name="trades"
                     label="Septic"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="supplier"
-                    name="supplier"
+                    value="supplier"
+                    name="trades"
                     label="Supplier"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="tile"
-                    name="tile"
+                    value="tile"
+                    name="trades"
                     label="Tile Installer"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="water-proofing"
-                    name="water-proofing"
+                    value="water-proofing"
+                    name="trades"
                     label="Water Proofing"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="well-treatment"
-                    name="well-treatment"
+                    value="well-treatment"
+                    name="trades"
                     label="Well Treatment"
                 />
                 <Form.Check
                     type="checkbox"
-                    id="windows"
-                    name="windows"
+                    value="windows"
+                    name="trades"
                     label="Windows"
                 />
+                <input type="hidden" name="trades" />
                 </Form.Group>
                 <button type="submit">Submit</button>
             </Form>
